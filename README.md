@@ -16,9 +16,9 @@ You can view the full interaction between the AI agent (Claude) and the rudof-MC
 ### Input Materials (`/input`)
 These files were used during the demonstration to showcase the server's capabilities:
 * `data.ttl`: The core RDF dataset containing three individuals and their birthplaces.
-* `query.rq`: The federated SPARQL query used to join local data with live population statistics from **Wikidata**.
-* `schema.shex` & `shapemap.shm`: The Shape Expressions used for structural validation.
-* `schema.shacl`: The SHACL constraints used to demonstrate error detection.
+* `query.sparql`: The federated SPARQL query used to join local data with live population statistics from **Wikidata**.
+* `schema.shex` & `shapemap.sm`: The Shape Expressions used for structural validation.
+* `schema.ttl`: The SHACL constraints used to demonstrate error detection.
 
 ### Obtained Results (`/results`)
 > **Note:** Due to Claude platform limitations, the shared Claude conversation snapshot does not render binary image outputs. You can find the actual generated visualization in this folder.

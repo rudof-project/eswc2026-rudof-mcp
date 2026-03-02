@@ -3,14 +3,14 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix ex: <http://example.org/> .
 
-ex:Ana a foaf:Person ;
-    foaf:name "Ana García" ;
+ex:Alice a foaf:Person ;
+    foaf:name "Alice" ;
     ex:birthPlace "Madrid" .
 
-ex:Carlos a foaf:Person ;
-    foaf:name "Carlos Martínez" ;
+ex:Bob a foaf:Person ;
+    foaf:name "Bob" ;
     ex:birthPlace "Barcelona" .
 
-ex:Laura a foaf:Person ;
-    foaf:name "Laura Rodríguez" ;
+ex:Carol a foaf:Person ;
+    foaf:name "Carol" ;
     ex:birthPlace "Sevilla" .

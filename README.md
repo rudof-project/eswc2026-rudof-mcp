@@ -12,11 +12,7 @@ This repository contains the reproducibility materials and obtained results for 
 You can view the full interaction between the AI agent (Claude) and the rudof-MCP server here: [Full Claude Conversation Snapshot](https://claude.ai/share/f8ce0cb4-086e-4d44-8505-bfae277c59e2)
 
 ## Video Demonstration
-<div align="center">
-  <video src="./claude_execution_video.mp4" controls preload="auto" width="100%" style="max-width: 800px;">
-    Your browser does not support the video tag. <a href="./claude_execution_video.mp4">Download the video</a>
-  </video>
-</div>
+You can see the full demo in video here: [Download MP4](https://github.com/rudof-project/eswc2026-rudof-mcp/raw/refs/heads/main/claude_execution_video.mp4 )
 
 ## Repository Content
 

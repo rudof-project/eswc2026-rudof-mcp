@@ -1,1 +1,1 @@
-<http://example.org/Alice>@<http://example.org/PersonShape>, <http://example.org/Bob>@<http://example.org/PersonShape>, <http://example.org/Carol>@<http://example.org/PersonShape>
+<http://example.org/Alice>@<http://example.org/EmployeeShape>,<http://example.org/Bob>@<http://example.org/EmployeeShape>,<http://example.org/Carol>@<http://example.org/ManagerShape>,<http://example.org/Acme>@<http://example.org/OrganizationShape>

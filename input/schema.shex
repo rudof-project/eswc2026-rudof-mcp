@@ -1,10 +1,17 @@
 PREFIX ex: <http://example.org/>
-PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
-ex:PersonShape {
-  rdf:type [foaf:Person] ;
-  foaf:name xsd:string ;
-  ex:birthPlace xsd:string
+ex:OrganizationShape {
+  ex:hasProductionEmployees @ex:EmployeeShape* ;
+  ex:hasManagers @ex:ManagerShape*
+}
+
+ex:EmployeeShape {
+  ex:developerAt @ex:OrganizationShape ? ;
+  ex:designerAt @ex:OrganizationShape ?
+}
+
+ex:ManagerShape {
+  ex:managerAt @ex:OrganizationShape ;
+  ex:manages NOT @ex:EmployeeShape ?
 }

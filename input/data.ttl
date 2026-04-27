@@ -1,16 +1,25 @@
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix ex: <http://example.org/> .
+PREFIX ex: <http://example.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-ex:Alice a foaf:Person ;
-    foaf:name "Alice" ;
-    ex:birthPlace "Madrid" .
+ex:Acme a ex:Organization ;
+    ex:name "Acme Corp" ;
+    ex:hasProductionEmployees ex:Alice, ex:Bob ;
+    ex:hasManagers ex:Carol .
 
-ex:Bob a foaf:Person ;
-    foaf:name "Bob" ;
-    ex:birthPlace "Barcelona" .
+ex:Alice a ex:Person ;
+    ex:name "Alice" ;
+    ex:age 30 ;
+    ex:developerAt ex:Acme ;
+    ex:programmingLanguage "Python" , "Java" .
 
-ex:Carol a foaf:Person ;
-    foaf:name "Carol" ;
-    ex:birthPlace "Sevilla" .
+ex:Bob a ex:Person ;
+    ex:name "Bob" ;
+    ex:age 27 ;
+    ex:designerAt ex:Acme ;
+    ex:designTool "Figma" , "Sketch" .
+
+ex:Carol a ex:Person ;
+    ex:name "Carol" ;
+    ex:age 42 ;
+    ex:managerAt ex:Acme ;
+    ex:numberOfTeams 3 .
